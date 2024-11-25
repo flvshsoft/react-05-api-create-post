@@ -3,7 +3,7 @@ import React from "react";
 function Home() {
   return (
     <div className="container py-5">
-      <h1 className="text-center text-primary">Welcome to the Home Page</h1>
+      <h1 className="text-center text-primary">Welcome to Hello World</h1>
       <p className="text-center text-muted">
         This is the home page of our application.
       </p>
