@@ -4,6 +4,7 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Peta from "./components/Peta";
+import UserList from "./components/User";
 import './App.css'; // Pastikan path sesuai
 
 
@@ -48,6 +49,11 @@ function App() {
                   Peta
                 </Link>
               </li>
+              <li className="nav-item">
+                <Link to="/user" className="nav-link">
+                  User
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
@@ -60,6 +66,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/peta" element={<Peta />} />
+        <Route path="/user" element={<UserList />} />
       </Routes>
     </Router>
   );
