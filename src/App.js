@@ -4,7 +4,8 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Peta from "./components/Peta";
-import UserList from "./components/User";
+import UserList from "./components/user";
+import UserCreate from "./components/user/create";
 import './App.css'; // Pastikan path sesuai
 
 
@@ -67,6 +68,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/peta" element={<Peta />} />
         <Route path="/user" element={<UserList />} />
+        <Route path="/user/create" element={<UserCreate />} />
       </Routes>
     </Router>
   );
