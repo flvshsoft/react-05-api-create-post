@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from "./components/Home";
 import About from "./components/About";
 import Contact from "./components/Contact";
+import Peta from "./components/Peta";
 import './App.css'; // Pastikan path sesuai
 
 
@@ -42,6 +43,11 @@ function App() {
                   Contact
                 </Link>
               </li>
+              <li className="nav-item">
+                <Link to="/peta" className="nav-link">
+                  Peta
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
@@ -53,6 +59,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/peta" element={<Peta />} />
       </Routes>
     </Router>
   );
